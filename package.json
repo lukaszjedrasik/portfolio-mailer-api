@@ -9,7 +9,7 @@
   "author": "Łukasz Jędrasik",
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/mail": "^6.3.1",
+    "@sendgrid/mail": "^6.4.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",

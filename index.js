@@ -4,7 +4,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-const port = 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -26,4 +25,4 @@ app.post('/send', (req, res) => {
     sgMail.send(msg)
 });
 
-app.listen(port, () => console.log(`running on port ${port}`));
+app.listen(8080, () => console.log(`running on port 8080`));
