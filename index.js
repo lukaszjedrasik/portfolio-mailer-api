@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Welcome Page
 app.get('/', (req, res) => {
     res.send('Welcome to the SendGrid Email Server | Łukasz Jędrasik')
+    console.log(process.env.SENDGRID_API_KEY);
 });
 
 // Email Page
