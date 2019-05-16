@@ -23,7 +23,8 @@ app.post('/send', (req, res) => {
         subject: req.body.subject,
         text: req.body.text
     };
-    sgMail.send(msg)
+    sgMail.send(msg);
+    res.send('');
 });
 
 app.listen(8080, () => console.log(`running on port 8080`));
